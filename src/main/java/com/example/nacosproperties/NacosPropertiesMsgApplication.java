@@ -11,7 +11,7 @@ public class NacosPropertiesMsgApplication {
         ConfigurableApplicationContext applicationContext =  SpringApplication.run(NacosPropertiesMsgApplication.class, args);
         String userName = applicationContext.getEnvironment().getProperty("nacos.val");
         String userAge = applicationContext.getEnvironment().getProperty("nacos.val");
-        System.err.println("nacos.val :"+userName+"; nacos.val: "+userAge);
+        System.out.println("nacos.val :"+userName+"; nacos.val: "+userAge);
     }
 
 }
